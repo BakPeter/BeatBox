@@ -21,7 +21,7 @@ public class SoundViewModel {
     }
 
 
-    public void onButtonClicked() {
+    public void onButtonClicked(){
         mBeatBox.play(mSound);
 
     }

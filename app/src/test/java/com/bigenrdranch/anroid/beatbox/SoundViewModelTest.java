@@ -28,8 +28,9 @@ public class SoundViewModelTest {
 
     @Test
     public void callsBeatBoxOnButtonClicked(){
-        mSubject.onButtonClicked();
+        float rate = 1.0f;
+        mSubject.onButtonClicked(rate);
 
-        verify(mBeatBox).play(mSound);
+        verify(mBeatBox).play(mSound, rate);
     }
 }
